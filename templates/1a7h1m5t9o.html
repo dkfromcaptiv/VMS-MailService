@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Login</title>
+</head>
+
+<body style="font-family: Arial, sans-serif;background-color: #f4f4f4;margin: 0;padding: 0;">
+    <div class="email-container" style="width: 100%;max-width:800px;margin: 20px auto;background-color: #e2dede;border-radius: 8px;overflow: hidden;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <!-- Header with Background Color -->
+        <div class="header" style="background-color: #000;color: #ffffff;padding: 10px 20px;text-align: center;">
+            <h1>OTP - VMS</h1>
+        </div>
+
+        <!-- Email Content -->
+        <div class="content" style="padding: 20px;color: #333333;">
+            <p style="font-size: 16px;line-height: 1.5;margin: 10px 0;">Dear {{VisitorName}},</p>
+
+            <p style="font-size: 16px;line-height: 1.5;margin: 10px 0;">To securely log in to Visitor Management System (VMS), please use the following
+                One-Time Password (OTP):</p>
+
+            <!-- OTP Section -->
+            <div class="otp" style="font-size: 24px;font-weight: bold;background-color: #f8f8f8;padding: 20px;text-align: center;margin: 20px 0;border: 1px dashed #4CAF50;letter-spacing: 10px;">
+                <strong>{{OTP}}</strong>
+            </div>
+
+            <p style="font-size: 16px;line-height: 1.5;margin: 10px 0;">For security reasons, do not share this code with anyone. If you did not request this login, please
+                contact us immediately.</p>
+            <p style="font-size: 16px;line-height: 1.5;margin: 10px 0;">Best regards,</p>
+            <p style="font-size: 16px;line-height: 1.5;margin: 10px 0;"><strong>{{CompanyName}}</strong></p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer" style="text-align: center;padding: 10px;font-size: 12px;color: #ffffff;background-color: #000;">
+            <p>&copy; 2024 {{CompanyName}}. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
